@@ -1,6 +1,4 @@
-<?php
-require_once "./class_nilaimahasiswa.php"
-?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -45,18 +43,6 @@ require_once "./class_nilaimahasiswa.php"
 <br>
 <hr>
 <br>
-<?php
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-
-  $mahasiswa = new NilaiMahasiswa($_POST['nim'], $_POST['matkul'], $_POST['nilai']);
-  
-  echo "<br> NIM: " . $mahasiswa->nim;
-  echo "<br> Mata Kuliah: " . $mahasiswa->matkul;
-  echo "<br> Nilai: " . $mahasiswa->nilai;
-  echo "<br> Hasil Ujian: " . $mahasiswa->hasil();
-  echo "<br> Grade: " . $mahasiswa->kelulusan();
-}
-?>
 </div>
 
 </body>
