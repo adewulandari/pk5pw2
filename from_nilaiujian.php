@@ -26,7 +26,7 @@ require_once "./class_nilaimahasiswa.php"
     <label for="mk" class="col-3 col-form-label">Pilih MK</label> 
     <div class="col-6">
       <select id="matkul" name="matkul" class="custom-select" required="required">
-        <option>Data Warehouse</option>
+        <option>Pemograman web</option>
       </select>
     </div>
   </div>
